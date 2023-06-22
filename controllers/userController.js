@@ -13,7 +13,9 @@ const getAllUsers = async (req, res) => {
 // GET a single user by _id and populated thought and friend data
 const getUserById = async (req, res) => {
   try {
-    const user = await User.findById(req.params.id).populate('thoughts').populate('friends');
+    console.log("*** req.params ***")
+    console.log(req.params)
+    const user = await User.findById(req.params.userId).populate('thoughts').populate('friends');
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
@@ -36,7 +38,7 @@ const createUser = async (req, res) => {
 // PUT to update a user by _id
 const updateUser = async (req, res) => {
   try {
-    const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    const updatedUser = await User.findByIdAndUpdate(req.params.userId, req.body, { new: true });
     if (!updatedUser) {
       return res.status(404).json({ error: 'User not found' });
     }
@@ -49,7 +51,7 @@ const updateUser = async (req, res) => {
 // DELETE to remove a user by _id
 const deleteUser = async (req, res) => {
   try {
-    const deletedUser = await User.findByIdAndRemove(req.params.id);
+    const deletedUser = await User.findByIdAndRemove(req.params.userId);
     if (!deletedUser) {
       return res.status(404).json({ error: 'User not found' });
     }
