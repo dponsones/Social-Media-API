@@ -13,8 +13,6 @@ const getAllUsers = async (req, res) => {
 // GET a single user by _id and populated thought and friend data
 const getUserById = async (req, res) => {
   try {
-    console.log("*** req.params ***")
-    console.log(req.params)
     const user = await User.findById(req.params.userId).populate('thoughts').populate('friends');
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
@@ -62,6 +60,8 @@ const deleteUser = async (req, res) => {
 };
 const addFriend = async (req, res) => {
   try {
+    console.log("*** req.params ***")
+    console.log(req.params)
     const { userId, friendId } = req.params;
 
     // Update the user's friend list
