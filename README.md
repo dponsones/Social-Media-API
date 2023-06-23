@@ -23,7 +23,7 @@ npm start
 ```
 
 ## Links
-https://github.com/dponsones/Social-Media-API.gitLinks to an external site.
+https://github.com/dponsones/Social-Media-API.git
 
 https://drive.google.com/file/d/1oMan5hBsCxPdFw6IX9XuTK7nHqjdBMWT/view?usp=sharing
 
