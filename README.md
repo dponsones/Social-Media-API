@@ -22,13 +22,12 @@ You can begin application by running:
 npm start
 ```
 
-## Review
+## Links
+https://github.com/dponsones/Social-Media-API.gitLinks to an external site.
 
-You are required to submit BOTH of the following for review:
+https://drive.google.com/file/d/1oMan5hBsCxPdFw6IX9XuTK7nHqjdBMWT/view?usp=sharing
 
-* A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
 
 ---
 © 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
